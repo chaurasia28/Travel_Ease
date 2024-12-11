@@ -1,0 +1,78 @@
+.support-page {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .faq-section, .contact-section, .form-section {
+    margin-top: 30px;
+  }
+  
+  h2 {
+    /* color: #007BFF; */
+    margin-bottom: 15px;
+  }
+  
+  .faq-item {
+    margin-bottom: 10px;
+  }
+  
+  .faq-item h4 {
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .faq-item p {
+    margin: 5px 0 10px 15px;
+    color: #555;
+  }
+  
+  .contact-section p {
+    margin: 5px 0;
+  }
+  
+  .form-section {
+    margin-top: 20px;
+  }
+  
+  .success-message {
+    color: green;
+    margin-bottom: 15px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .submit-button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  

@@ -1,0 +1,79 @@
+/* Global Styles */
+.tnt-settings-page {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tnt-settings-page h1 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: rgb(234, 163, 38);
+}
+
+.tnt-settings-section {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.tnt-settings-section h2 {
+  font-size: 24px;
+  color: rgb(234, 163, 38);
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.tnt-form-group {
+  margin-bottom: 20px;
+}
+
+.tnt-form-group label {
+  font-size: 16px;
+  font-weight: 500;
+  display: block;
+  color: #555;
+}
+
+.tnt-form-group input[type="text"],
+.tnt-form-group input[type="number"],
+.tnt-form-group select,
+.tnt-form-group input[type="file"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 16px;
+  color: #333;
+  transition: border-color 0.3s;
+}
+
+.tnt-form-group input[type="text"]:focus,
+.tnt-form-group input[type="number"]:focus,
+.tnt-form-group select:focus {
+  border-color: rgb(234, 163, 38);
+  outline: none;
+}
+
+.tnt-save-settings-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: rgb(234, 163, 38);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tnt-save-settings-btn:hover {
+  background-color: rgb(211, 149, 38);
+}

@@ -1,0 +1,220 @@
+/* .search__bar{
+    padding:0.5rem 1rem;
+    border-radius: 50px;
+    box-shadow: rgba(17,12,46,0.15) 0px 48px 100px 0px;
+    width:max-content;
+    margin-top:50px;
+}
+span > i.ri-map-pin-line{
+    font-size: 1.8rem;
+    color: #ee6e6e;
+  }
+  span >  i.ri-map-pin-time-line{
+    font-size: 1.8rem;
+    color: #ee6e6e;
+  }
+  span >i.ri-group-line{
+  font-size: 1.8rem;
+  color: #ee6e6e;
+  }
+  span > i.ri-search-line{
+    font-size: 1.8rem;
+    color: #ee6e6e;
+  }
+
+.form__group input{
+    border:none;
+    font-size: .9rem;
+    color:var(--heading-color);
+    font-weight: 500;
+}
+.form__group input:focus{
+    outline:none;
+}
+.form__group h6{
+   margin-bottom: 0;
+}
+.form__group-fast{
+    border-right:2px solid #ddd;
+}
+.search__bar i{
+    font-size:1.6rem;
+    padding:0.5rem;
+    background: var(--secaondary-color);
+    color:#fff;
+    border-radius: 10px 5px 10px 5px;
+    cursor:pointer;
+}
+
+@media only screen and (max-width: 992px){
+  .search__bar{
+    width: 100%;
+    border-radius: 2rem;
+  }
+  .search__bar form{
+    flex-wrap: wrap;
+  }
+  .search__bar form .form__group{
+    width: 48%;
+  }
+}
+
+@media only screen and (max-width: 576px){
+  .search__bar form .form__group{
+    width: 100%;
+  }
+  .form__group input{
+    font-size: 0.7rem;
+  }
+  .form__group span i{
+    font-size: 1.1rem;
+  }
+  .form__group h6{
+    font-size: 1rem;
+  }
+} 
+
+ */
+
+
+/* Light Mode (Default) */
+.search__bar {
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  width: max-content;
+  margin-top: 50px;
+  background-color: #fff;
+  /* Light background */
+}
+
+span>i.ri-map-pin-line,
+span>i.ri-map-pin-time-line,
+span>i.ri-group-line,
+span>i.ri-search-line {
+  font-size: 1.8rem;
+  color: #ee6e6e;
+  /* Light mode icon color */
+}
+
+.form__group input {
+  border: none;
+  font-size: 0.9rem;
+  color: var(--heading-color);
+  font-weight: 500;
+  background-color: #fff;
+  /* Light input background */
+}
+
+.form__group input::placeholder {
+  color: #aaa;
+  /* Light placeholder color */
+}
+
+.form__group input:focus {
+  outline: none;
+}
+
+.form__group h6 {
+  margin-bottom: 0;
+  color: var(--heading-color);
+  /* Light color for headings */
+}
+
+.form__group-fast {
+  border-right: 2px solid #ddd;
+}
+
+.search__bar i {
+  font-size: 1.6rem;
+  padding: 0.5rem;
+  /* background: var(--secondary-color); */
+  color: #fff;
+  border-radius: 10px 5px 10px 5px;
+  cursor: pointer;
+}
+
+/* Dark Mode */
+body.dark-theme .search__bar {
+  background-color: #060000;
+  /* Dark background for search bar */
+  box-shadow: rgba(255, 255, 255, 0.15) 0px 48px 100px 0px;
+  /* Light shadow */
+}
+
+body.dark-theme span>i.ri-map-pin-line,
+body.dark-theme span>i.ri-map-pin-time-line,
+body.dark-theme span>i.ri-group-line,
+body.dark-theme span>i.ri-search-line {
+  color: #ee6e6e;
+  /* Icon color stays the same in dark mode as in light mode */
+}
+
+body.dark-theme .form__group input {
+  color: #fff;
+  /* White text color for input */
+  background-color: #060000;
+  /* Dark background for input */
+  border: 1px solid #060000;
+  /* Light border to differentiate */
+}
+
+body.dark-theme .form__group input::placeholder {
+  color: #bbb;
+  /* Lighter placeholder text in dark mode */
+}
+
+body.dark-theme .form__group input:focus {
+  outline: none;
+  border-color: #060000;
+  /* Focused border color in dark mode */
+}
+
+body.dark-theme .form__group h6 {
+  color: #fff;
+  /* White text color for headings in dark mode */
+}
+
+body.dark-theme .form__group-fast {
+  border-right: 2px solid #060000;
+  /* Lighter border for dark mode */
+}
+
+body.dark-theme .search__bar i {
+  /* background: var(--secondary-color); */
+  color: #fff;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 992px) {
+  .search__bar {
+    width: 100%;
+    border-radius: 2rem;
+  }
+
+  .search__bar form {
+    flex-wrap: wrap;
+  }
+
+  .search__bar form .form__group {
+    width: 48%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .search__bar form .form__group {
+    width: 100%;
+  }
+
+  .form__group input {
+    font-size: 0.7rem;
+  }
+
+  .form__group span i {
+    font-size: 1.1rem;
+  }
+
+  .form__group h6 {
+    font-size: 1rem;
+  }
+}

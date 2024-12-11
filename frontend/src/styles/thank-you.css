@@ -1,0 +1,285 @@
+
+:root {
+    --font-family: 'Roboto', sans-serif;
+    --background-color-light: #ffffff;
+    --background-color-dark: #000000;
+    --box-background-light: #f7f7f7;
+    --box-background-dark: #1a1a1a;
+    --text-color-light: #333;
+    --text-color-dark: #ffffff;
+    --subtext-color-light: #666;
+    --subtext-color-dark: #bbb;
+    --border-color-light: #ddd;
+    --border-color-dark: #444;
+    --success-color: #28a745;
+    --primary-color-light: #007bff;
+    --primary-color-dark: #0056b3;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color-light);
+
+}
+
+.thank__you,
+.subscription {
+    margin-top: 30px;
+    padding: 30px;
+    border: 1px solid var(--border-color-light);
+    border-radius: 10px;
+    background-color: var(--box-background-light);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 250px;
+}
+
+.thank__you {
+    background-color: #f8f9fa;
+}
+
+.thank__you span i {
+
+    font-size: 4rem;
+    color: var(--success-color);
+    margin-bottom: 15px;
+}
+
+.input-margin {
+    margin-right: 20px;
+}
+
+.thank__you h1 {
+
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-color-light);
+}
+
+.thank__you h3 {
+
+    font-size: 1.5rem;
+    color: var(--subtext-color-light);
+}
+
+
+.thank__you button {
+    padding: 10px 25px;
+    font-size: 1.1rem;
+    background-color: var(--primary-color-light);
+    color: var(--text-color-light);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.thank__you button:hover {
+    background-color: var(--primary-color-light);
+}
+
+.thank__you input {
+    padding: 5px;
+    border-radius: 20px;
+    width: 200px;
+    font-size: 1rem;
+    background-color: #333;
+    color: whitesmoke;
+    border: 1px solid var(--border-color-light);
+    transition: border-color 0.3s ease;
+}
+
+.thank__you input:focus {
+    outline: none;
+    border-color: #348ceabd;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.thank__you input::placeholder {
+    color: grey;
+    text-align: center;
+    opacity: 0.7;
+}
+
+
+.thank__you button:active {
+    background-color: #004085;
+}
+
+.subscription {
+    background-color: var(--box-background-light);
+}
+
+.subscription h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--text-color-light);
+}
+
+.subscription p {
+    font-size: 1.1rem;
+    color: var(--subtext-color-light);
+}
+
+.subscription input {
+    padding: 10px 18px;
+    border: 1px solid var(--border-color-light);
+    border-radius: 20px;
+    width: 100%;
+    max-width: 350px;
+    font-size: 1rem;
+}
+
+.subscription input.focus {
+    border-color: #348ceabd;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.subscription .btn {
+    padding: 10px 25px;
+    background-color: var(--success-color);
+    color: var(--text-color-light);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color .3s ease, transform .3s ease;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.subscription .btn:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+.subscription .btn.active {
+    background-color: #1e7e34;
+    transform: translateY(0);
+}
+
+.text-success {
+    font-size: 1.2rem;
+    color: var(--success-color);
+    font-weight: 790;
+    margin-top: 40px;
+    animation: fadeIn .3s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width :768px) {
+
+    .subscription,
+    .thank__you {
+        padding: 25px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .subscription h2,
+    .thank__you h1 {
+        font-size: 1.8rem;
+    }
+
+    .subscription input {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .subscription .btn {
+        width: 100%;
+    }
+
+    .thank__you h3 {
+        font-size: 1.2rem;
+    }
+
+    .thank__you button {
+        width: 100%;
+    }
+}
+
+body.dark-theme {
+    background-color: var(--background-color-dark);
+}
+
+.thank__you,
+.subscription {
+    border: 1px solid var(--border-color-dark);
+    background-color: var(--box-background-dark);
+}
+
+.thank__you h1,
+.subscription h2,
+.text-success {
+    color: var(--text-color-dark);
+}
+
+.subscription p,
+.subscription input {
+    color: var(--subtext-color-dark);
+}
+
+.subscription input {
+    background-color: #333;
+    color: var(--text-color-dark);
+    margin-bottom: 20px;
+}
+
+.subscription input::placeholder {
+    color: #bbb;
+}
+
+.subscription .btn {
+    background-color: var(--success-color);
+    color: black;
+}
+
+.subscription .btn:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+.subscription .btn.active {
+    background-color: #1e7e34;
+    transform: translateY(0);
+}
+
+.subscription h2 {
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, .5);
+}
+
+.subscription p {
+    margin-bottom: 20px;
+}
+
+.text-success {
+    font-size: 1.4rem;
+}
+
+@media (max-width:768px) {
+
+    .subscription input {
+        padding: 12px;
+        font-size: 1.1rem;
+    }
+
+    .subscription .btn {
+        padding: 12px 30px;
+        font-size: 1.2rem;
+    }
+}
